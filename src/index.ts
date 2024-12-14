@@ -32,7 +32,7 @@ export class Validate
      * @param { IsEmpty } value
      * @returns { Boolean }
      */
-    public static isEmpty = (value: IsEmpty = ""): Boolean => (value === null || value.replaceAll(/^\s+/g, "") === null || value.replaceAll(/^\s+/g, "") === "" || value.replaceAll(/^\s+/g, "") === undefined || value.replaceAll(/^\s+/g, "") === "undefined" );
+    public static isEmpty = (value: IsEmpty = ""): Boolean => (value === null || value.replace(/^\s+/g, "") === null || value.replace(/^\s+/g, "") === "" || value.replace(/^\s+/g, "") === undefined || value.replace(/^\s+/g, "") === "undefined" );
 
     /**
      * Check Number Type
